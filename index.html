@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #B59893;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color:white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #AFB294 ;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #EEEEEE ;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #99B0AE;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Countries that are Famous</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+   
+    <a href="https://www.visitdubai.com/en/" target="_blank">Dubai</a> 
+     </ul>
+     
+      </ul>
+      <a href="https://en.parisinfo.com/" target="_blank">Paris</a> 
+     
+       </ul>
+       
+        </ul>
+      <a href="https://visitqatar.com/intl-en/about-qatar"
+      target="_blank">Quatar</a> 
+      
+   
+    
+  </nav>
+  
+  <article>
+    <h1>Dubai</h1>
+    <p>Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene.</p>
+    <p>Dubai is famous for wealth, being expensive, and being a popular luxury travel destination, but Dubai is also famous for its souks, the Dubai Creek, some history and culture, camel riding, dune bashing and worker exploitation.</p>
+  </article>
+  
+  <section>
+  <nav>
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Paris</h1>
+    <p> Te capital and most populous city of France. Famous for it's toursistic cites.</p>
+    <p>This might come as a surprising Paris fact to many as the most known one is in New York but Paris also has a number of its replicas of statues of Liberty. This might come as a surprising Paris fact to many as the most known one is in New York but Paris also has a number of its replicas of statues of Liberty.</p>
+  </article>
+     
+</section>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </nav>
+  
+  
+  
+  <article>
+    <h1>Quatar</h1>
+    <p> Qatar is a peninsular Arab country whose terrain comprises arid desert and a long Persian (Arab) Gulf shoreline of beaches and dunes. </p>
+    <p> Qatar offers tradition and modernity that's difficult to find elsewhere. Qatar celebrates its heritage, but still offers newcomers and travelers modern amenities, new hotels and a mix of international cultures, cuisines and lifestyles.
+    
+
+     </p>
+    
+   
+    
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
